@@ -1,0 +1,83 @@
+.blogs{
+    .container{
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 15px;
+            margin-bottom: 30px;
+            h1{
+                font-size: 35px;
+                @media (max-width:768px) {
+                    &{
+                        font-size: 25px;
+                    }
+                }
+            }
+            p{
+                cursor: pointer;
+                i{
+                    margin-left: 5px;
+                }
+                &:hover{
+                    color: var( --tan-crayola);
+                }
+            }
+        }
+        .blogs-boxs{
+            display: grid;
+            grid-template-columns: repeat(auto-fill ,minmax(300px ,1fr));
+            gap: 15px;
+            @media (max-width:768px) {
+                &{
+                    grid-template-columns: repeat(auto-fill ,minmax(250px ,1fr));
+                }
+            }
+            .box{
+                .imgs{
+                    position: relative;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                    .btnn{
+                        position: absolute;
+                        right: -500px;
+                        bottom: 0px;
+                        background-color: #fff;
+                        color: var(--black);
+                        padding: 10px;
+                        cursor: pointer;
+                        i{
+                            margin-left: 5px;
+                        }
+                        &:hover{
+                            color: var(--tan-crayola);
+                        }
+                    }
+                }
+                h3{
+                    font-size: 20px;
+                    margin: 10px 0;
+                    &:hover{
+                        color: var(--tan-crayola);
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    a{
+                        color: var(--black);
+                        &:hover{
+                            color: var(--tan-crayola);
+                        }
+                    }
+                }
+                &:hover{
+                    .btnn{
+                        right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

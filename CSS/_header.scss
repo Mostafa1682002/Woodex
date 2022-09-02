@@ -1,0 +1,164 @@
+header{
+    background-color: var(--white);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    transition: 1s;
+    &.scroll {
+        position: fixed;
+        transform: translateY(-100%);
+        border-bottom: 1px solid var(--black_25);
+        animation: slideIn 0.5s ease forwards;
+    }
+    @keyframes slideIn {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(0); }
+    }
+    .container{
+        .header-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .search{
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #666;
+                input{
+                    padding: 5px 7px;
+                    font-size: 20px;
+                    width: 100%;
+                }
+                span{
+                    font-size: 20px;
+                }
+            }
+            @media (max-width:768px) {
+                .search{
+                    display: none;
+                }
+            }
+            h1{
+                font-size: 30px;
+                a{
+                    color: var(--black);
+                }
+            }
+            .icons{
+                span{
+                    cursor: pointer;
+                    font-size: 22px;
+                    padding:5px 3px;
+                    position: relative;
+                    margin-left: 10px;
+                    &:hover{
+                        color: var(--tan-crayola);
+                    }
+                    .number{
+                        position: absolute;
+                        top: 55%;
+                        right: -8px;
+                        width: 21px;
+                        height: 21px;
+                        border-radius: 50%;
+                        line-height: 15px;
+                        font-size: 15px;
+                        color: #fff;
+                        background-color: var(--tan-crayola);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+nav{
+    &.active{
+        right: 0px;
+    }
+    background-color: var(--white);
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    z-index: 444;
+    top: 0px;
+    right: -500px;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid var(--black_25);
+    @media (max-width:320px) {
+        &{
+            width: 310px;
+        }
+    }
+    &> span{
+        cursor: pointer;
+        display: block;
+        font-size: 30px;
+        width: fit-content;
+        color: var(--black_50);
+        &:hover{
+            color: var(--tan-crayola);
+        }
+    }
+    .language{
+        display: flex;
+        justify-content: space-between;
+        .box{
+            h3{
+                margin-bottom: 10px;
+                font-size: 23px;
+            }
+            a{
+                display: block;
+                font-size: 16px;
+                margin-bottom: 10px;
+                color: var(--spanish-gray);
+                &:hover{
+                    color: var(--tan-crayola);
+                }
+            }
+        }
+    }
+    .links{
+        a{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: var(--smokey-black);
+            &:hover{
+                color: var(--black_50);
+            }
+        }
+    }
+    .contact-us{
+        h3{
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+        p{
+            margin-bottom: 10px;
+            color: var(--spanish-gray);
+            &:hover{
+                color: var(--tan-crayola);
+            }
+        }
+    }
+    .social{
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            font-size: 16px;
+            padding-left: 5px;
+            color: var(--black);
+            &:hover{
+                color: var(--tan-crayola);
+            }
+        }
+    }
+}
