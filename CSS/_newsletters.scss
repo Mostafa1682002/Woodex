@@ -1,4 +1,5 @@
 .newletter{
+    padding-bottom: 60px;
     .container{
         background-color:var( --cultured);
         // padding: 50px;
@@ -33,7 +34,6 @@
                         outline: 2px solid var(--black_25);
                     }
                 }
-                
                 button{
                     cursor: pointer;
                     position: absolute;
