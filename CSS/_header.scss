@@ -5,7 +5,6 @@ header{
     left: 0;
     right: 0;
     z-index: 3;
-    transition: 1s;
     &.scroll {
         position: fixed;
         transform: translateY(-100%);

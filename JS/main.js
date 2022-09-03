@@ -1,10 +1,19 @@
 let header=document.querySelector('header');
+let btnTop=document.querySelector('.btn-top');
 window.onscroll=function(){
     if(scrollY>50){
         header.classList.add('scroll')
     }else{
         header.classList.remove('scroll')
     }
+    if(scrollY>600){
+        btnTop.classList.add('active');
+    }else{
+        btnTop.classList.remove('active');
+    }
+}
+btnTop.onclick=function(){
+    window.scroll(0,0)
 }
 
 
