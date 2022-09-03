@@ -358,6 +358,14 @@ nav .social a:hover {
   font-size: 18px;
   color: var(--black);
 }
+@media (max-width: 768px) {
+  .home .container .img-1 .box .box-content h3 {
+    font-size: 20px;
+  }
+  .home .container .img-1 .box .box-content h3 {
+    font-size: 16px;
+  }
+}
 .home .container .img-2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -387,6 +395,14 @@ nav .social a:hover {
 .home .container .img-2 .box .box-content p {
   font-size: 18px;
   color: var(--black);
+}
+@media (max-width: 768px) {
+  .home .container .img-2 .box .box-content h3 {
+    font-size: 20px;
+  }
+  .home .container .img-2 .box .box-content p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 768px) {
   .home .container .img-2 {
@@ -762,6 +778,17 @@ footer .container .content-boxs .box form button {
   line-height: 40px;
   padding: 10px;
   background: none;
+}
+@media (max-width: 768px) {
+  footer .container .content-boxs .box h1 {
+    font-size: 22px;
+  }
+  footer .container .content-boxs .box h3 {
+    font-size: 20px;
+  }
+  footer .container .content-boxs .box a {
+    font-size: 16px;
+  }
 }
 footer .container .right {
   padding: 20px 0px 5px;

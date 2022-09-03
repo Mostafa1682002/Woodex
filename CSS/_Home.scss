@@ -53,6 +53,14 @@
                         font-size: 18px;
                         color: var(--black);
                     }
+                    @media (max-width:768px) {
+                        h3{
+                            font-size: 20px;
+                        }
+                        h3{
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
         }
@@ -82,6 +90,14 @@
                     p{
                         font-size: 18px;
                         color: var(--black);
+                    }
+                    @media (max-width:768px) {
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
                     }
                 }
             }

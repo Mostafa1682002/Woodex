@@ -61,6 +61,17 @@ footer{
                         background: none;
                     }
                 }
+                @media (max-width:768px) {
+                    h1{
+                        font-size: 22px;
+                    }
+                    h3{
+                        font-size: 20px;
+                    }
+                    a{
+                        font-size: 16px;
+                    }
+                }
             }
         }
         .right{
