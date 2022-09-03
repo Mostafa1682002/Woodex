@@ -789,6 +789,9 @@ footer .container .content-boxs .box form button {
   footer .container .content-boxs .box a {
     font-size: 16px;
   }
+  footer .container .content-boxs .box form input {
+    font-size: 16px;
+  }
 }
 footer .container .right {
   padding: 20px 0px 5px;
