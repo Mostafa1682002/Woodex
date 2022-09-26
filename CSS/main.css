@@ -171,7 +171,7 @@ header .container .header-content .search {
 }
 header .container .header-content .search input {
   padding: 5px 7px;
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
 }
 header .container .header-content .search span {
@@ -737,7 +737,7 @@ footer .container .content-boxs .box h3 {
 }
 footer .container .content-boxs .box a {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: var(--black);
   display: block;
 }
